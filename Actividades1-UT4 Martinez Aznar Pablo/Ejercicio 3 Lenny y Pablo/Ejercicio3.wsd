@@ -24,7 +24,36 @@ class Alquiler
     -int fechaAlquiler
     -int fechaDevolucion
 }
+
+class Esquis
+{
+    -string Marca
+    -int NºSerie
+}
+class Gafas 
+{
+    -string Modelo
+    -string Marca
+    -int NºSerie
+}
+class Baston
+{
+    -string Modelo
+    -string Marca
+    -int NºSerie
+}
+class Marca
+{
+    -string Direccion
+    -string Servicio
+}
 ' Aqui se enlazan las clases
 Tienda -- Equipo
 Equipo -- Cliente
 Cliente .. Alquiler
+Equipo -- Esquis
+Equipo -- Gafas
+Equipo -- Baston
+Esquis -- Marca
+Gafas -- Marca
+Baston -- Marca
