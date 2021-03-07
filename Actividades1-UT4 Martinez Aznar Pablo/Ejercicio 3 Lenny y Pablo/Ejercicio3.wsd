@@ -1,0 +1,30 @@
+' La siguiente linia es para que al poner - delante de las clases para hacerlas privadas no te salga un cuadrado
+skinparam classAttributeIconSize 0  
+'Aqui se definen las clases
+class Tienda
+{
+    -int CIF
+    -string Ubicacion
+    -string Nombre
+}
+class Equipo
+{
+    -Esquis Esquis
+    -Gafas Gafas
+    -Baston Bastones
+}
+class Cliente
+{
+    -string DNI
+    -string Nombre
+    -int Telefono
+}
+class Alquiler
+{
+    -int fechaAlquiler
+    -int fechaDevolucion
+}
+' Aqui se enlazan las clases
+Tienda -- Equipo
+Equipo -- Cliente
+Cliente .. Alquiler
