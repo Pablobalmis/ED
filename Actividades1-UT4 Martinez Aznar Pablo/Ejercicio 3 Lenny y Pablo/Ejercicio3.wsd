@@ -1,3 +1,4 @@
+@startuml Ejercicio3
 ' La siguiente linia es para que al poner - delante de las clases para hacerlas privadas no te salga un cuadrado
 skinparam classAttributeIconSize 0  
 'Aqui se definen las clases
@@ -57,3 +58,4 @@ Equipo -- Baston
 Esquis -- Marca
 Gafas -- Marca
 Baston -- Marca
+@enduml

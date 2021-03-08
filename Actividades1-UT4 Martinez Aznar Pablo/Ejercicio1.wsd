@@ -1,0 +1,54 @@
+@startuml Ejercicio1
+skinparam classAttributeIconSize 0
+'Clases
+class Empresa
+
+class CompañiaBus
+{
+    -string Nombre
+}
+class Trayecto
+{
+    -int num
+    -int fechaSalida
+    -int horaSalida
+    -int horallegada
+}
+class Autobus
+{
+    -string modelo
+    -string matricula
+    -int capMax
+}
+class Persona
+{
+    -string dni
+    -string direccion
+    -int numTelefono
+    -int edad
+}
+class Empleado
+{
+    -int numSegSoc
+    -int antigüedad
+}
+class Pasajero
+{
+    -codCliente
+}
+class Reserva
+{
+    -int precio
+    -int numAsiento
+}
+'Relaciones
+Empresa -- CompañiaBus
+CompañiaBus o--Trayecto
+CompañiaBus -- Persona
+CompañiaBus -- Empleado
+CompañiaBus -- Pasajero
+Trayecto -- Autobus
+Persona <|-- Empleado
+Persona <|-- Pasajero
+Pasajero .. Reserva
+@enduml
