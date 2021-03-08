@@ -1,0 +1,38 @@
+@startuml Ejercicio2
+skinparam classAttributeIconSize 0
+'Clases
+class SociedadDeportiva
+class Publico
+{
+    -string dni
+    -string nombre
+    -string direccion
+    -int telefono
+}
+class Abonados
+{
+    -int numSocios
+}
+class Simpatizantes
+{
+    -int fechaAlta
+}
+class Partido
+{
+    -int codigo
+    -string nombre
+    -int fecha
+}
+class Entradas
+{
+    -double Precio
+    -int numAsiento
+}
+'Relaciones
+SociedadDeportiva -- Publico
+Publico <|-- Abonados
+Publico <|-- Simpatizantes
+Partido -- Entradas
+Abonados -- Entradas
+Simpatizantes -- Entradas
+@enduml
