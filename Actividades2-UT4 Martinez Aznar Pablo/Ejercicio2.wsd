@@ -1,0 +1,18 @@
+@startuml Ejercicio2.wsd
+:Vendedor: -- (Añadir datos)
+(Añadir datos)..>(Listar datos)
+(Añadir datos)..>(Buscar inmueble) 
+:Vendedor: -- (Realizar ventas)
+(Realizar ventas) <|-- (Ventas cerradas)
+(Realizar ventas) <|-- (Ventas abiertas)
+(Realizar ventas) ..>(Asignar venta)
+:Comprador: -- (Comprar inmuebles)
+:Vendedor: -- (Gestionar oferta)
+:Comprador: -- (Gestionar oferta)
+(Gestionar oferta) <.. (Oferta)
+(Gestionar oferta) <.. (Contraoferta)
+(Gestionar oferta) <.. (Acuerdo)
+(Acuerdo) ..> (Registrar)
+:Comprador: -- (Gestionar prestamo)
+(Gestionar prestamo) -- :Banco:
+@enduml
