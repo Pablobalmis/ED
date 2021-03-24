@@ -9,8 +9,6 @@
 :Comprador: -- (Comprar inmuebles)
 :Vendedor: -- (Gestionar oferta)
 :Comprador: -- (Gestionar oferta)
-(Gestionar oferta) <.. (Oferta)
-(Gestionar oferta) <.. (Contraoferta)
 (Gestionar oferta) <.. (Acuerdo)
 (Acuerdo) ..> (Registrar)
 :Comprador: -- (Gestionar prestamo)
