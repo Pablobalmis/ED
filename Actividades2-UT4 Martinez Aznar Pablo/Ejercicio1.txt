@@ -1,0 +1,10 @@
+Queremos desarrollar una plataforma de aprendizaje on line, para ello los usuarios que quieran acceder deberan registrarse.
+Los usuarios podrán: 
+Ver los cursos en los que están matriculados.
+Configurar el entorno.
+Consultar los cursos en los que estan matriculados.
+Publicar en el foro.
+Descargar el material.
+Entregar resultados.
+
+Cuando se entrguen los resultados se podrá hacer de dos formas diferentes, o bien subiendo archivos o bien introduciendo texto.

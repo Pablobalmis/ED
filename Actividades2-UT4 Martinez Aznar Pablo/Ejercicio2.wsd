@@ -1,5 +1,5 @@
 @startuml Ejercicio2.wsd
-:Vendedor: -- (Añadir datos)
+:Vendedor: -- (Añadir datos) 
 (Añadir datos)..>(Listar datos)
 (Añadir datos)..>(Buscar inmueble) 
 :Vendedor: -- (Realizar ventas)

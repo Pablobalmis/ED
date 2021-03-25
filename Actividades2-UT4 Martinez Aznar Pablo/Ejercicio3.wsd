@@ -1,0 +1,16 @@
+@startuml Ejercicio2.wsd
+:cliente: -- (login)
+(login) <-- (realizar pedido)
+(realizar pedido) <-- (mostrar informacion)
+(login) <-- (devolver producto)
+(devolver producto) --> (actualizar inventario)
+(actualizar inventario) --> (actualizar contabilidad)
+(login) <-- (consultar pedido)
+(login) <-- (cancelar pedido)
+(login) <-- (reclamaciones)
+:encargado: -- (crear informe)
+' reclamaciones implica tanto hacerlas como verlas, por eso para crear un informe se consultan las reclamaciones
+(crear informe) --> (reclamaciones)
+(crear informe) --> (consultar reclamaciones)
+(consultar reclamaciones) --> (login)
+@enduml
