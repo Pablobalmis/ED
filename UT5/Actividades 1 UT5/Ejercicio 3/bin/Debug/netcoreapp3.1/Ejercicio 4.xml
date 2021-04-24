@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ejercicio 4</name>
+    </assembly>
+    <members>
+        <member name="F:Ejercicio_4.Guerrero.tipoArma">
+            <summary>
+            Clase guerrero, hereda de humano le añade aramadura y tipo de armadura
+            </summary>
+        </member>
+        <member name="F:Ejercicio_4.Humano.nombre">
+            <summary>
+            Clase Humano la clase de la cual parten mago y guerrero
+            </summary>
+        </member>
+        <member name="F:Ejercicio_4.Mago.tipoLibroHechizos">
+            <summary>
+            Clase mago, hereda de humano y le añade el tipo de tunica y el libro de hechizos
+            </summary>
+        </member>
+    </members>
+</doc>
