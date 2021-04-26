@@ -1,9 +1,9 @@
 Lenguaje de **marcado** Markdown
 Lenguaje de _marcado_ Markdown
 Lenguaje de **_marcado_** Markdown
-* **Encabezado1**
-* * **Encabezado2**
-* * * **Encabezado3**
+# Encabezado1
+## Encabezado2
+### Encabezado3
 
 [Tutorial del markdown](https://www.markdowntutorial.com)
 
